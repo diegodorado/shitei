@@ -1,0 +1,59 @@
+
+.container
+  =image_tag "shitei/online2.png"
+
+.container
+
+  .delivery
+    .order
+
+      %h4 VERIFICÁ TU COMPRA
+
+
+      %p
+
+        TEI ROSARIO CITY 24 U. - $100
+        NEW YORK ROLL 8 U. - $30
+        PHILADELPHIA ROLL 8 U. - $30
+
+        ENVIO: $6
+
+        TOTAL: $166
+
+      %a.change-order(href="#")
+        PARA MODIFICAR TU COMPRA CLICK ACÁ 
+
+    .user-data
+
+      %h4 VERIFICÁ TUS DATOS
+
+      %p
+        Nombre: Jorge
+        Apellido: Díaz
+        Teléfono: 341 4225588
+        E-mail: jorgedíaz@gmail.com
+        Domicilio:   Moreno 75 bis 
+        Agregar domicilio|    
+
+      %h4 ENVÍO O RETIRO
+
+      %select
+        %option ENVIO
+
+      %h4 HORARIO DE ENVÍO O RETIRO
+
+      %p 
+        Entre
+        %select
+          %option 21:30
+        y
+        %select
+          %option 22:30
+
+      %button CONFIRMAR
+
+
+
+%section
+.container
+  =image_tag "shitei/webshitei.png"

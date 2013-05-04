@@ -1,0 +1,152 @@
+@import "normalize"
+@import "compass"
+@import "sprites"
+@import "susy"
+@import "colors"
+@import "reset"
+@import "header"
+@import "footer"
+
+$total-columns  : 4 //phone columns
+$column-width   : 5em
+$gutter-width   : 1em
+$grid-padding   : $gutter-width
+
+$tablet : 8
+$computer : 12
+
+.container
+  +container($total-columns, $tablet, $computer)
+  img
+    max-width: 100%
+  +at-breakpoint($tablet)
+  +at-breakpoint($computer)
+
+
+.debug .container
+  +susy-grid-background
+  +at-breakpoint($tablet)
+    +susy-grid-background
+  +at-breakpoint($computer)
+    +susy-grid-background
+
+
+
+#debug
+  color: blue
+  border: 1px solid #ccc
+  border-radius: 4px
+  padding: 8px
+  background: white
+  position: fixed
+  top: 1em
+  right: 1em
+
+
+body
+  padding-top: 38px
+  font-family: 'Open Sans', sans-serif
+  font-weight: 400
+  font-size: 13px
+  background: image_url("bg2.png") no-repeat, image_url("bg1.png") no-repeat
+
+  a
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+nav.social
+  ul
+    +inline-block-list
+  a
+    display: block
+    &:hover
+      +opacity(0.6)
+    
+  .fb a
+    margin-right: 4px
+    +replace-text-with-dimensions("fb.png")
+  .tw a
+    +replace-text-with-dimensions("tw.png")
+
+.your-order
+  color: $black
+  font-size: 12px
+  h4
+    font-weight: 700
+    color: $orange
+    font-size: 25px
+  .total
+    font-weight: 600
+
+
+          
+section.home
+
+  .slides-img
+    img
+      display: block
+      +box-shadow(#e7e7e7 0px -4px 10px)
+  .slides 
+    overflow: hidden
+    position: relative
+    border-top: 6px solid $orange
+    .indicator
+      position: absolute
+      top: 0
+      left: 4em
+      background: image_url("tri.png") no-repeat
+      width: image-width("tri.png")
+      height: image-height("tri.png")
+    .slide-item
+      +span-columns(3,12)
+      +nth-omega(last)
+      color: $grey
+      padding-top: 30px
+      h4
+        font-size: 20px
+        font-weight: 700
+        line-height: 26px
+        margin-bottom: 8px        
+      &.active
+        h4
+          color: $orange
+      p
+        line-height: 20px
+
+
+
+
+
+
+
+.delivery
+  color: $black
+  button
+    font-size: 15px
+    font-weight: 700
+    color: $white
+  h4
+    font-size: 24px
+    font-weight: 700
+    color: $orange
+
+  select
+    color: $dark_grey
+
+  .change-order
+    color: $light_orange
+  p
+    line-height: 20px
+
+
+
+
+
+
+
+
+
+
+
+

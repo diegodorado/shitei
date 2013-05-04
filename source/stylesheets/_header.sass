@@ -1,0 +1,49 @@
+
+header
+  margin-bottom: 45px
+  .logo
+    +span-columns(3,12)
+    a
+      display: block
+      +replace-text-with-dimensions("logo.png")
+      &:hover
+        +opacity(0.6)
+  
+  .menu
+    +span-columns(9 omega,12)
+  .upper-row
+    overflow: hidden
+    height: 54px
+
+  .phone
+    +span-columns(4,9)
+    padding-top: 3px
+    letter-spacing: 2px
+    font-size: 22px
+    font-weight: 600
+    color: $light_orange
+  .user-social        
+    +span-columns(5 omega,9)
+  nav.user
+    float: left
+    padding-top: 4px
+    ul
+      +inline-block-list
+    a
+      padding: 0 14px
+      font-size: 22px
+      font-weight: 800
+      color: $light_orange
+  nav.social
+    float: right
+
+  nav.main
+    ul
+      +horizontal-list
+    a
+      padding-right: 8px
+      font-size: 16px
+      font-weight: 700
+      color: $grey
+    ul li:last-child a
+      padding-right: 0px

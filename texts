@@ -1,0 +1,441 @@
+*************************************
+* START TextExport for webshitei.psd
+*************************************
+
+LayerPath: /Footer/
+LayerName: Copyright © 2011-2013 SHITEI - Todos los derechos reservados - 
+
+LayerContent:
+Copyright © 2011-2013 SHITEI - Todos los derechos reservados - Terminos y Condiciones - Política de Privacidad  -  info@shi-tei.com
+Diseño: Mariano Diez  -  Programación: Felisa Savio
+
+LayerStyles:
+* capitalization: normal
+$white
+* font: Tahoma
+* size: 10
+
+*************************************
+
+LayerPath: /Footer/
+LayerName: 0800 444 ROLL (7655) info@shi-tei.com
+
+LayerContent:
+0800 444 ROLL (7655)
+info@shi-tei.com
+
+LayerStyles:
+* capitalization: normal
+$orange
+* font: OpenSans
+* size: 13
+
+*************************************
+
+LayerPath: /Footer/
+LayerName: FRANQUICIAS Informate 
+
+LayerContent:
+FRANQUICIAS
+Informate
+
+LayerStyles:
+* capitalization: normal
+$orange
+* font: OpenSans-Semibold
+* size: 13
+
+*************************************
+
+LayerPath: /Footer/
+LayerName: NOSOTROS Nuestro alcance Horarios de atención
+
+LayerContent:
+NOSOTROS
+Nuestro alcance
+Horarios de atención
+
+LayerStyles:
+* capitalization: normal
+$orange
+* font: OpenSans-Semibold
+* size: 13
+
+*************************************
+
+LayerPath: /Footer/
+LayerName: PEDIDOS ONLINE Registrarme Log In Cómo funciona Hacer pedido
+
+LayerContent:
+PEDIDOS ONLINE
+Registrarme
+Log In
+Cómo funciona
+Hacer pedido
+
+LayerStyles:
+* capitalization: normal
+$orange
+* font: OpenSans-Semibold
+* size: 13
+
+*************************************
+
+LayerPath: /Footer/
+LayerName: MENÚ Combinados Rolls & Makis Sashimis & Nigiris Ensaladas Wok 
+
+LayerContent:
+MENÚ
+Combinados
+Rolls & Makis
+Sashimis & Nigiris
+Ensaladas
+Wok & Pasta
+Adicionales
+Bocaditos
+Postres & Bebidas
+
+LayerStyles:
+* capitalization: normal
+$orange
+* font: OpenSans-Semibold
+* size: 13
+
+*************************************
+
+LayerPath: /Contenido Menu/Tu Pedido/
+LayerName: TOTAL $0000.00
+
+LayerContent:
+TOTAL $0000.00
+
+LayerStyles:
+* capitalization: normal
+ $black
+* font: OpenSans-Semibold
+* size: 11.9999990463257
+
+*************************************
+
+LayerPath: /Contenido Menu/Tu Pedido/
+LayerName: Carro vacío -
+
+LayerContent:
+Carro vacío -
+
+LayerStyles:
+* capitalization: normal
+ $black
+* font: OpenSans
+* size: 11.9999990463257
+
+*************************************
+
+LayerPath: /Contenido Menu/Tu Pedido/
+LayerName: TU PEDIDO
+
+LayerContent:
+TU PEDIDO
+
+LayerStyles:
+* capitalization: normal
+$orange
+* font: OpenSans-Bold
+* size: 25.8355236053467
+
+*************************************
+
+LayerPath: /Inicio 1/
+LayerName: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
+
+LayerContent:
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+Lorem ipsum dolor sit amet.
+
+LayerStyles:
+* capitalization: normal
+$grey
+* font: OpenSans
+* size: 13.0231113433838
+
+*************************************
+
+LayerPath: /Inicio 1/
+LayerName: Bienvenido New York Roll!
+
+LayerContent:
+Bienvenido
+New York Roll!
+
+LayerStyles:
+* capitalization: normal
+$grey
+* font: OpenSans-Bold
+* size: 20.0355548858643
+
+*************************************
+
+LayerPath: /Inicio 1/
+LayerName: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
+
+LayerContent:
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+Lorem ipsum dolor sit amet.
+
+LayerStyles:
+* capitalization: normal
+$grey
+* font: OpenSans
+* size: 13.0231113433838
+
+*************************************
+
+LayerPath: /Inicio 1/
+LayerName: Bienvenido New York Roll!
+
+LayerContent:
+Bienvenido
+New York Roll!
+
+LayerStyles:
+* capitalization: normal
+$grey
+* font: OpenSans-Bold
+* size: 20.0355548858643
+
+*************************************
+
+LayerPath: /Inicio 1/
+LayerName: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
+
+LayerContent:
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+Lorem ipsum dolor sit amet.
+
+LayerStyles:
+* capitalization: normal
+$grey
+* font: OpenSans
+* size: 13.0231113433838
+
+*************************************
+
+LayerPath: /Inicio 1/
+LayerName: Bienvenido New York Roll!
+
+LayerContent:
+Bienvenido
+New York Roll!
+
+LayerStyles:
+* capitalization: normal
+$grey
+* font: OpenSans-Bold
+* size: 20.0355548858643
+
+*************************************
+
+LayerPath: /Inicio 1/
+LayerName: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
+
+LayerContent:
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+Lorem ipsum dolor sit amet.
+
+LayerStyles:
+* capitalization: normal
+ $black
+* font: OpenSans
+* size: 13.0231113433838
+
+*************************************
+
+LayerPath: /Inicio 1/
+LayerName: Bienvenido New York Roll!
+
+LayerContent:
+Bienvenido
+New York Roll!
+
+LayerStyles:
+* capitalization: normal
+$orange
+* font: OpenSans-Bold
+* size: 20.0355548858643
+
+*************************************
+
+LayerPath: /Header/
+LayerName: INICIO     MENU     PEDIDOS ONLINE     NUESTRO ALCANCE     FRAN
+
+LayerContent:
+INICIO     MENU     PEDIDOS ONLINE     NUESTRO ALCANCE     FRANQUICIAS     CONTACTO
+
+LayerStyles:
+* capitalization: normal
+$dark_grey
+* font: OpenSans-Bold
+* size: 16
+
+*************************************
+
+LayerPath: /Header/
+LayerName: LOG IN      REGISTRATE
+
+LayerContent:
+LOG IN      REGISTRATE
+
+LayerStyles:
+* capitalization: uppercase
+$light_orange
+* font: OpenSans-Extrabold
+* size: 22
+
+*************************************
+
+LayerPath: /Pedidos Online/Confirma tu compra/
+LayerName: CONFIRMAR
+
+LayerContent:
+CONFIRMAR
+
+LayerStyles:
+* capitalization: normal
+$white
+* font: OpenSans-Bold
+* size: 15
+
+*************************************
+
+LayerPath: /Pedidos Online/Confirma tu compra/
+LayerName: Entre:   21:30         y   22:30    
+
+LayerContent:
+Entre:   21:30         y   22:30 
+
+
+
+LayerStyles:
+* capitalization: normal
+ $black
+* font: OpenSans
+* size: 13
+
+*************************************
+
+LayerPath: /Pedidos Online/Confirma tu compra/
+LayerName: HORARIO DE ENVÍO O RETIRO
+
+LayerContent:
+HORARIO DE ENVÍO O RETIRO
+
+LayerStyles:
+* capitalization: normal
+$orange
+* font: OpenSans-Bold
+* size: 24
+
+*************************************
+
+LayerPath: /Pedidos Online/Confirma tu compra/
+LayerName: ENVIO   
+
+LayerContent:
+ENVIO
+
+
+
+LayerStyles:
+* capitalization: normal
+$dark_grey
+* font: OpenSans
+* size: 13
+
+*************************************
+
+LayerPath: /Pedidos Online/Confirma tu compra/
+LayerName: ENVÍO O RETIRO
+
+LayerContent:
+ENVÍO O RETIRO
+
+LayerStyles:
+* capitalization: normal
+$orange
+* font: OpenSans-Bold
+* size: 24
+
+*************************************
+
+LayerPath: /Pedidos Online/Confirma tu compra/
+LayerName: Nombre: Jorge Apellido: Díaz Teléfono: 341 4225588 E-mail: jorg
+
+LayerContent:
+Nombre: Jorge
+Apellido: Díaz
+Teléfono: 341 4225588
+E-mail: jorgedíaz@gmail.com
+Domicilio:   Moreno 75 bis 
+  Agregar domicilio|
+
+
+
+LayerStyles:
+* capitalization: normal
+ $black
+* font: OpenSans
+* size: 13
+
+*************************************
+
+LayerPath: /Pedidos Online/Confirma tu compra/
+LayerName: VERIFICÁ TUS DATOS
+
+LayerContent:
+VERIFICÁ TUS DATOS
+
+LayerStyles:
+* capitalization: normal
+$orange
+* font: OpenSans-Bold
+* size: 24
+
+*************************************
+
+LayerPath: /Pedidos Online/Confirma tu compra/
+LayerName: TEI ROSARIO CITY 24 U. - $100 NEW YORK ROLL 8 U. - $30 PHILADEL
+
+LayerContent:
+TEI ROSARIO CITY 24 U. - $100
+NEW YORK ROLL 8 U. - $30
+PHILADELPHIA ROLL 8 U. - $30
+
+ENVIO: $6
+
+TOTAL: $166
+
+PARA MODIFICAR TU COMPRA CLICK ACÁ 
+
+LayerStyles:
+* capitalization: normal
+ $black
+* font: OpenSans
+* size: 13
+
+*************************************
+
+LayerPath: /Pedidos Online/Confirma tu compra/
+LayerName: VERIFICÁ TU COMPRA
+
+LayerContent:
+VERIFICÁ TU COMPRA
+
+LayerStyles:
+* capitalization: normal
+$orange
+* font: OpenSans-Bold
+* size: 24
+
+*************************************
+* FINISHED TextExport for webshitei.psd
+*************************************
