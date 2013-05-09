@@ -13,12 +13,10 @@
   %body
     %a#debug(href="#") Mostrar Grid
 
-    = partial "layouts/header"        
-        
-    #content
-      = yield
-
-    = partial "layouts/footer"        
+    = partial "layouts/header"
+    = yield
+    = partial "layouts/footer"
+    = partial "layouts/lightbox"
 
     = javascript_include_tag 'vendors'
     = javascript_include_tag 'application'

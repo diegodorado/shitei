@@ -1,0 +1,28 @@
+%section.contact
+  .container
+    .contact-box
+      .heading
+        =image_tag "contact-heading.png"    
+      .form
+        %form
+          .row
+            .field
+              %label(for="name") Nombre:*
+              %input(name="name")
+          .row
+            .field.email
+              %label(for="email") E-mail:*
+              %input(name="email")
+            .field.phone
+              %label(for="phone") Teléfono:*
+              %input(name="phone")
+          .row
+            %label(for="message") Mensaje:*
+            %textarea(name="message")
+          .row
+            %button
+    .work-with-us
+      .image
+        =image_tag "work-with-us.png"    
+      .text
+        =image_tag "contact-text.png"          

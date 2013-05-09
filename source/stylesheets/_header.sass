@@ -1,29 +1,18 @@
-
 header
   margin-bottom: 45px
   .logo
-    +span-columns(3,12)
     a
       display: block
       +replace-text-with-dimensions("logo.png")
       &:hover
         +opacity(0.6)
-  
-  .menu
-    +span-columns(9 omega,12)
-  .upper-row
-    overflow: hidden
-    height: 54px
+
 
   .phone
-    +span-columns(4,9)
-    padding-top: 3px
+    padding-top: 4px
     letter-spacing: 2px
-    font-size: 22px
     font-weight: 600
-    color: $light_orange
-  .user-social        
-    +span-columns(5 omega,9)
+    color: $orange
   nav.user
     float: left
     padding-top: 4px
@@ -33,17 +22,37 @@ header
       padding: 0 14px
       font-size: 22px
       font-weight: 800
-      color: $light_orange
+      color: $orange
   nav.social
     float: right
 
   nav.main
+    position: relative
+    .indicator
+      position: absolute
+      display: block
+      margin: 0
+      padding: 0
+      z-index: 999
+      background: $orange
+      height: 4px
+      bottom: -4px
     ul
       +horizontal-list
+      position: relative
+      z-index: 1000 //stay on top of indicator
+      li:last-child a
+        padding-right: 0px
+      li.active a
+        color: $orange
     a
+      +transition(all 1s ease)
       padding-right: 8px
-      font-size: 16px
       font-weight: 700
       color: $grey
-    ul li:last-child a
-      padding-right: 0px
+      &:hover
+        text-decoration: none
+
+
+
+
