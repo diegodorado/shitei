@@ -1,0 +1,56 @@
+         
+section.home
+
+#home-slides
+  width: 100%
+  overflow: hidden
+  .slides-img
+    img
+      width: 100%
+      display: block
+      +box-shadow(#e7e7e7 0px -4px 10px)
+#home-slides-nav 
+  overflow: hidden
+  .slide-item
+    position: relative    
+    color: $grey
+    padding-bottom: 30px
+    h4
+      border-top: 6px solid $orange
+      padding-top: 30px
+      width: 110%
+      font-size: 20px
+      font-weight: 700
+      line-height: 26px
+      margin-bottom: 8px        
+    p
+      font-size: 13px
+      line-height: 20px
+    &:hover
+      cursor: pointer
+    &.active
+      h4
+        color: $orange
+      &:before
+        content: ""
+        display: block
+        position: absolute
+        top: 0
+        left: 4em
+        background: image_url("tri.png") no-repeat
+        width: image-width("tri.png")
+        height: image-height("tri.png")
+
+
+#home-slides-nav 
+  .slide-item
+    +span-columns(4 omega,4)
+  +at-breakpoint($tablet)
+    .slide-item
+      +span-columns(4,8)
+      +nth-omega(2n)
+  +at-breakpoint($computer)
+    .slide-item
+      +span-columns(3,12)
+      +remove-nth-omega(2n)
+      +nth-omega(last)

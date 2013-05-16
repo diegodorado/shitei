@@ -1,0 +1,129 @@
+header
+  margin-bottom: 45px
+  .logo
+    a
+      display: block
+      +replace-text-with-dimensions("logo.png")
+      &:hover
+        +opacity(0.6)
+
+
+  .phone
+    padding-top: 4px
+    letter-spacing: 2px
+    font-weight: 600
+    color: $orange
+  nav.user
+    float: left
+    padding-top: 4px
+    a
+      font-weight: 800
+      color: $orange
+  nav.social
+    float: right
+
+  nav.main
+    position: relative
+    .indicator
+      position: absolute
+      display: block
+      margin: 0
+      padding: 0
+      z-index: 999
+      background: $orange
+      height: 4px
+      bottom: -4px
+    ul
+      position: relative
+      z-index: 1000 //stay on top of indicator
+      li:last-child a
+        padding-right: 0px
+      li.active a
+        color: $orange
+    a
+      +transition(all 1s ease)
+      font-weight: 700
+      color: $grey
+      &:hover
+        text-decoration: none
+
+
+
+
+
+header
+  .logo
+    +span-columns(2,4)
+    a
+      background-size: contain
+      width: 100%
+  .phone
+    display: none
+  .user
+    +span-columns(2 omega,4)
+    ul
+      text-align: right
+      margin-bottom: 10px
+    a
+      font-size: 16px    
+    .user li
+      display: block
+  .main  
+    +span-columns(4 omega,4)
+    margin-top: 20px
+    ul
+      +horizontal-list(2px)
+    a
+      font-size: 11px
+      b
+        display: none
+
+  +at-breakpoint($tablet)
+    .logo
+      +span-columns(2,8)
+    .phone
+      display: block
+      font-size: 20px
+      +span-columns(2,8)
+    .user
+      +span-columns(3,8)
+      ul
+        +inline-block-list
+      a
+        padding: 0 14px
+        font-size: 22px      
+    .social
+      +span-columns(1 omega,8)
+    .main  
+      +span-columns(8 omega,8)
+      a
+        font-size: 14px
+        padding-right: 8px
+        b
+          display: inline
+
+  +at-breakpoint($computer)
+    .logo
+      +span-columns(3,12)
+      a
+        width: 157px
+    .phone
+      display: block
+      font-size: 22px
+      +span-columns(4,12)
+    .user
+      +span-columns(4,12)
+      li
+        display: inline-block
+    .social
+      +span-columns(1 omega,12)
+    .phone, .user, .social
+      height: 50px
+
+    .main
+      +span-columns(9 omega,12)
+      margin-top: 0
+      ul
+        +horizontal-list(4px)
+      a
+        font-size: 16px

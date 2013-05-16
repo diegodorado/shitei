@@ -19,7 +19,7 @@ namespace :deploy do
   DESC
   task :update_code, :roles => [:app] do
     on_rollback { delete release_path, :recursive => true }
-    run_locally "rsync -avz --delete -e ssh #{build_path} #{user}@#{domain}:#{shared_path}/#{build_path}"
+    run_locally "rsync -e ssh -avz --delete  #{build_path} #{user}@#{domain}:#{shared_path}/#{build_path}"
     run "cp -R #{shared_path}/#{build_path}/* #{release_path}"
   end
 end

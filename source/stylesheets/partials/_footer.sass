@@ -1,0 +1,73 @@
+footer
+  margin-top: 17px
+  background: image_url("footer-bg.png") repeat-x
+  padding: 25px 0 35px
+
+
+  hr
+    margin: 0
+    height: 4px
+    background: $orange
+    border: 0
+
+  .six, .contact
+    margin-top: 25px
+    font-size: 13px
+  .six
+    font-weight: 600
+    h5
+      color: $orange
+      margin-bottom: 5px
+    nav
+      a
+        line-height: 22px
+        color: $white
+
+  .contact
+    text-align: right
+    color: $orange
+    font-size: 13px
+
+    .phone
+      margin-top: 14px
+    .email
+      margin-top: 9px
+      color: $white
+
+  .copy
+    color: $white
+    font-size: 10px
+    line-height: 14px
+    text-align: center
+
+
+footer
+  .six
+    +span-columns(2,4)
+    +nth-omega(2n)
+  .contact
+    margin-bottom: 23px
+    +span-columns(4 omega,4)
+  .copy
+    +span-columns(4 omega,4)
+  +at-breakpoint($tablet)
+    height: 415px
+    .six
+      +span-columns(2,8)
+      +remove-nth-omega(2n)
+      +nth-omega(4)
+      margin-bottom: 23px
+    .contact
+      +span-columns(4 omega,8)
+    .copy
+      +span-columns(8 omega,8)
+  +at-breakpoint($computer)
+    .six
+      +remove-nth-omega(4)
+      +span-columns(2,12)
+    .contact
+      +pre(2)
+      +span-columns(2 omega,12)
+    .copy
+      +span-columns(12 omega,12)
+  

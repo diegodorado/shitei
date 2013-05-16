@@ -32,7 +32,15 @@ $ ->
 
 
 
-  $("#home-slides").cycle
+  fix_menu_widths()
+  $(window).bind( "resize", home_slides).trigger 'resize'
+
+home_slides =  ->
+  
+  $el = $("#home-slides")
+  return if $el.size() is 0
+  $el.css 'height', 'auto'
+  $el.cycle
     fx: "fade"
     aspect: true
     speed: 300
@@ -45,19 +53,18 @@ $ ->
     activePagerClass: 'active'
     pagerAnchorBuilder: (idx, slide) ->
       "#{@pager} .slide-item:nth-child(#{idx+1})"
-
-
-  fix_menu_widths()
-  
+        
 fix_menu_widths = ->
   #prorratea el ancho de los items del menu
+  $el = $("nav.menu")
+  return if $el.size() is 0
   widths = []
-  $("nav.menu").addClass 'not-ready'
-  $("nav.menu span").each ->
+  $el.addClass 'not-ready'
+  $el.find("span").each ->
     widths.push $(@).width()
-  $("nav.menu").removeClass 'not-ready'
+  $el.removeClass 'not-ready'
   t =  widths.reduce (x,y) -> x + y
   widths = widths.map (w) -> w/t*100
-  $("nav.menu li").each (i, el)->
-    $(el).width widths[i]+"%"
+  $el.find("li").each (i, li)->
+    $(li).width widths[i]+"%"
 

@@ -1,0 +1,45 @@
+
+section.contact
+  .contact-box
+    padding: 60px 0px 44px
+    overflow: hidden
+    background: image_url("contact-form-bg.png") no-repeat center center
+  .heading
+    +pre(1,12)
+    +span-columns(5,12)
+
+  .form
+    +span-columns(5 omega,12)
+    +post(1,12)
+  .row
+    margin-bottom: 7px
+    overflow: hidden
+  .field
+  .field.email
+    +span-columns(3,5)  
+  .field.phone  
+    +span-columns(2 omega,5)
+  label
+    display: block
+    font-size: 13px
+    line-height: 19px
+  input, textarea
+    background: $white image_url("field-bg.png") repeat-x top center
+    border: 1px solid #ccc
+    width: 100%
+  input
+  textarea
+    height: 100px
+  button
+    +replace-text-with-dimensions("contact-submit-bg.png")
+    border: none
+    float: right
+    &:hover
+      +opacity(0.6)
+  .work-with-us
+    padding-top: 38px
+    overflow: hidden
+    .image
+      +span-columns(4,12)
+    .text
+      +span-columns(8 omega,12)
