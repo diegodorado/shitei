@@ -7,15 +7,16 @@ header
       &:hover
         +opacity(0.6)
 
-
   .phone
-    padding-top: 4px
+    padding-top: 10px
     letter-spacing: 2px
     font-weight: 600
     color: $orange
   nav.user
     float: left
     padding-top: 4px
+    li
+      display: inline-block    
     a
       font-weight: 800
       color: $orange
@@ -36,6 +37,7 @@ header
     ul
       position: relative
       z-index: 1000 //stay on top of indicator
+      +horizontal-list(4px)      
       li:last-child a
         padding-right: 0px
       li.active a
@@ -47,8 +49,22 @@ header
       &:hover
         text-decoration: none
 
-
-
+  nav.main-phone
+    display: none
+    &.on
+      display: block
+      padding: 10px 0
+    li.active a, a:hover
+      text-decoration: none
+      color: $orange
+    a
+      +transition(all 0.5s ease)
+      font-weight: 700
+      color: $grey
+      font-size: 22px
+      padding: 4px
+      text-align: center
+      display: block
 
 
 header
@@ -65,28 +81,24 @@ header
       text-align: right
       margin-bottom: 10px
     a
-      font-size: 16px    
-    .user li
-      display: block
-  .main  
-    +span-columns(4 omega,4)
-    margin-top: 20px
-    ul
-      +horizontal-list(2px)
-    a
-      font-size: 11px
-      b
-        display: none
+      font-size: 14px    
 
+  .main
+    display: none
+  .phone-only
+    display: block
+    .phone
+      display: block
+      text-align: center
+      font-size: 25px
+  .tablet-only
+    display: none
   +at-breakpoint($tablet)
     .logo
       +span-columns(2,8)
-    .phone
-      display: block
-      font-size: 20px
-      +span-columns(2,8)
     .user
-      +span-columns(3,8)
+      +span-columns(5,8)
+      padding-bottom: 10px
       ul
         +inline-block-list
       a
@@ -94,27 +106,41 @@ header
         font-size: 22px      
     .social
       +span-columns(1 omega,8)
-    .main  
+      .more
+        display: none
+    .main
+      display: block
+      margin-top: 20px      
       +span-columns(8 omega,8)
       a
         font-size: 14px
         padding-right: 8px
         b
           display: inline
-
+    .phone-only
+      display: none
+    .tablet-only
+      display: block
+      +span-columns(5 omega,8)
+      .phone
+        padding-top: 4px
+        display: block
+        text-align: right
+        font-size: 25px       
   +at-breakpoint($computer)
     .logo
       +span-columns(3,12)
       a
         width: 157px
     .phone
+      padding-top: 4px    
       display: block
       font-size: 22px
       +span-columns(4,12)
     .user
       +span-columns(4,12)
-      li
-        display: inline-block
+      padding-bottom: 0
+
     .social
       +span-columns(1 omega,12)
     .phone, .user, .social
@@ -123,7 +149,7 @@ header
     .main
       +span-columns(9 omega,12)
       margin-top: 0
-      ul
-        +horizontal-list(4px)
       a
         font-size: 16px
+    .tablet-only
+      display: none        

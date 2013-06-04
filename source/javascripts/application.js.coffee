@@ -1,5 +1,9 @@
 $(window).bind "load", ->
 
+  $("nav.social .more").on 'click', (ev)->
+    ev.preventDefault()
+    $('.main-phone').toggleClass 'on'
+
   $("nav.main ul").lavaLamp
     fx: "easeOutBack"
     speed: 700
@@ -19,9 +23,9 @@ $ ->
     $('body').toggleClass 'debug'
 
 
-  $("#delivery").on 'click', (ev)->
+  $("#delivery, #delivery-phone").on 'click', (ev)->
     ev.preventDefault()
-    $('#lightbox').show()
+    $('#lightbox').height($('body').outerHeight(true)).show()
 
 
   $("#lightbox").on 'click', (ev)->

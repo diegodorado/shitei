@@ -14,6 +14,10 @@
 @import "sections/menu"
 @import "sections/pedidos"
 
+//disable debugging
+#debug
+  display: none
+
 .container
   +container($total-columns, $tablet, $computer)
   img
@@ -48,4 +52,5 @@ nav.social
     +replace-text-with-dimensions("fb.png")
   .tw a
     +replace-text-with-dimensions("tw.png")
-
+  .more a
+    +replace-text-with-dimensions("more.png")

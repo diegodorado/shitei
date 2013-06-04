@@ -15,24 +15,40 @@
           %a(href="#") facebook
         %li.tw
           %a(href="#") twitter
+        %li.more
+          %a(href="#") more
+    .tablet-only
+      .phone 0800 444 ROLL (7655)
     %nav.main
       .indicator
       %ul
-        %li
-          %a(href="/") 
-            %b INICIO
+        %li.active
+          %a(href="/") INICIO
         %li
           %a(href="/menu.html") MENU
         %li
-          %a#delivery(href="/pedidos.html") 
-            PEDIDOS 
-            %b ONLINE
+          %a#delivery(href="/pedidos.html") PEDIDOS ONLINE
         %li
-          %a(href="/alcance.html") 
-            %b NUESTRO 
-            ALCANCE
+          %a(href="/alcance.html") NUESTRO ALCANCE
         %li
           %a(href="/franquicias.html") FRANQUICIAS
         %li
           %a(href="/contacto.html") CONTACTO
+
+  .container.phone-only
+    %nav.main-phone
+      %ul
+        %li.active
+          %a(href="/") INICIO
+        %li
+          %a(href="/menu.html") MENU
+        %li
+          %a#delivery-phone(href="/pedidos.html") PEDIDOS ONLINE
+        %li
+          %a(href="/alcance.html") NUESTRO ALCANCE
+        %li
+          %a(href="/franquicias.html") FRANQUICIAS
+        %li
+          %a(href="/contacto.html") CONTACTO
+    .phone 0800 444 ROLL (7655)
 

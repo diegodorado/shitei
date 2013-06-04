@@ -1,18 +1,13 @@
 .delivery
   color: $black
-  font-size: 13px
+  font-size: 12px
   
   button
-    font-size: 13px
-    font-weight: 700
     color: $white
     background: $orange
     border: 0
     padding: 2px
   h4
-    font-size: 24px
-    line-height: 31px
-    font-weight: 700
     color: $orange
     margin-bottom: 10px
 
@@ -30,7 +25,7 @@
 
   .address 
     select
-      width: 217px
+      width: 160px
     input
       width: 184px
   
@@ -42,7 +37,7 @@
 
 #lightbox
   display: none
-  position: fixed
+  position: absolute
   top: 0
   left: 0
   right: 0
@@ -50,21 +45,14 @@
   background: rgba(#000,0.5)
   z-index: 1000
 
-  .outter
-    +pre(1,12)
-    +span-columns(10,12)
-    +post(1,12)
   .inner
-    margin-top: 50px
+    margin-top: 153px
     background: $white
-    padding: 40px
+
 
   .delivery
-    overflow: hidden
     .order
-      float: left
-      width: 280px
-      padding-right: 24px
+      margin-bottom: 20px
       .shipping
         margin-top: 31px
       .total
@@ -73,16 +61,86 @@
         margin-top: 40px
         display: block
     .user-data
-      border-left: 1px solid $orange
-      padding-left: 40px
-      float: right
-      width: 359px
       .part2
         margin-top: 28px
         h4
           margin-bottom: 14px
-        select
-          width: 118px
-
       .part3
         margin-top: 33px
+
+  .inner
+    +container
+    padding: 40px  25px   
+    
+  .delivery
+    button
+      font-size: 14px
+      font-weight: 600
+    h4
+      font-size: 17px
+      line-height: 25px
+      font-weight: 600
+
+
+  +at-breakpoint($tablet)
+    .delivery
+      font-size: 13px
+
+    .delivery
+      button
+        font-size: 14px
+        font-weight: 600
+      h4
+        font-size: 18px
+        line-height: 25px
+        font-weight: 600  
+
+    .inner
+      padding: 40px    
+      +container
+
+    .delivery
+      .order
+        +span-columns(4,8)
+      .user-data      
+        +span-columns(4 omega,8)
+        select
+          width: 118px        
+        .address 
+          select
+            width: 217px                  
+  +at-breakpoint($computer)
+    .inner
+      padding: 40px
+      max-width: none
+      margin: 0
+      
+    .delivery
+      button
+        font-size: 14px
+        font-weight: 700
+      h4
+        font-size: 24px
+        line-height: 31px
+        font-weight: 700  
+       
+    .outter
+      +pre(1,12)
+      +span-columns(10,12)
+      +post(1,12)
+    .delivery
+      overflow: hidden
+      width: auto
+      max-width: none
+      padding: 0
+      margin: 0      
+      .order
+        float: left
+        width: 280px
+        padding-right: 24px
+        margin-right: 0
+      .user-data
+        border-left: 1px solid $orange
+        padding-left: 40px
+        float: right
+        width: 359px

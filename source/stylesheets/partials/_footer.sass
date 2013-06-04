@@ -28,10 +28,8 @@ footer
     color: $orange
     font-size: 13px
 
-    .phone
-      margin-top: 14px
     .email
-      margin-top: 9px
+      padding-left: 7px
       color: $white
 
   .copy
@@ -48,6 +46,12 @@ footer
   .contact
     margin-bottom: 23px
     +span-columns(4 omega,4)
+    .social
+      float: right
+    .phone, .email
+      float: left
+      margin: 0
+      line-height: 28px
   .copy
     +span-columns(4 omega,4)
   +at-breakpoint($tablet)
@@ -59,6 +63,13 @@ footer
       margin-bottom: 23px
     .contact
       +span-columns(4 omega,8)
+      .phone, .email,.social
+        float: none
+        line-height: inherit      
+      .phone
+        margin-top: 14px
+      .email
+        margin-top: 9px      
     .copy
       +span-columns(8 omega,8)
   +at-breakpoint($computer)
