@@ -1,16 +1,25 @@
 
 section.contact
   .contact-box
-    padding: 60px 0px 44px
     overflow: hidden
-    background: image_url("contact-form-bg.png") no-repeat center center
+    border-width: 30px 30px 25px 60px
+    border-image: image_url("contact-form-bg.png") 30 30 25 60 fill stretch
+    +at-breakpoint($tablet)
+      border-width: 40px 50px 30px 50px
+      border-image: image_url("contact-form-bg.png") 40 50 30 50 fill stretch
+    +at-breakpoint($computer)
+      border-width: 60px 80px 44px 80px
+      border-image: image_url("contact-form-bg.png") 60 80 44 80 fill stretch
   .heading
-    +pre(1,12)
-    +span-columns(5,12)
-
+    margin-bottom: 20px
+    +span-columns(4 omega,4)
+    +at-breakpoint($tablet)
+      margin-bottom: 0px
+      +span-columns(6,12)
   .form
-    +span-columns(5 omega,12)
-    +post(1,12)
+    +span-columns(4 omega,4)
+    +at-breakpoint($tablet)
+      +span-columns(6 omega,12)
   .row
     margin-bottom: 7px
     overflow: hidden
@@ -40,6 +49,37 @@ section.contact
     padding-top: 38px
     overflow: hidden
     .image
-      +span-columns(4,12)
+      +pre(1,6)
+      +span-columns(4 omega,6)
+      +post(1,6)
+      margin-bottom: 40px
+      +at-breakpoint($tablet)
+        +pre(0)
+        +post(0)      
+        +span-columns(4,8)
+        margin-bottom: 0px
+      +at-breakpoint($computer)
+        +span-columns(4,12)
     .text
-      +span-columns(8 omega,12)
+      text-align: center
+      +span-columns(4 omega,4)
+      +at-breakpoint($tablet)
+        text-align: left
+        +span-columns(4 omega,8)
+      +at-breakpoint($computer)
+        +span-columns(8 omega,12)
+      h3
+        line-height: 18px
+        font-size: 25px
+        font-weight: 600
+        color: $orange
+        margin-bottom: 22px
+      p
+        line-height: 20px
+        font-size: 13px
+        margin-bottom: 14px
+      a
+        font-size: 19px
+        font-weight: 600
+        color: $orange
+       

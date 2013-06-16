@@ -18,25 +18,16 @@ $(window).bind "load", ->
     widthSetter: "b"
 
 $ ->
-  $("#debug").on 'click', (ev)->
-    ev.preventDefault()
-    $('body').toggleClass 'debug'
-
 
   $("#delivery, #delivery-phone").on 'click', (ev)->
     ev.preventDefault()
     $('#lightbox').height($('body').outerHeight(true)).show()
-
 
   $("#lightbox").on 'click', (ev)->
     ev.preventDefault()
     $('#lightbox').hide()
 
 
-
-
-
-  fix_menu_widths()
   $(window).bind( "resize", home_slides).trigger 'resize'
 
 home_slides =  ->
@@ -57,18 +48,3 @@ home_slides =  ->
     activePagerClass: 'active'
     pagerAnchorBuilder: (idx, slide) ->
       "#{@pager} .slide-item:nth-child(#{idx+1})"
-        
-fix_menu_widths = ->
-  #prorratea el ancho de los items del menu
-  $el = $("nav.menu")
-  return if $el.size() is 0
-  widths = []
-  $el.addClass 'not-ready'
-  $el.find("span").each ->
-    widths.push $(@).width()
-  $el.removeClass 'not-ready'
-  t =  widths.reduce (x,y) -> x + y
-  widths = widths.map (w) -> w/t*100
-  $el.find("li").each (i, li)->
-    $(li).width widths[i]+"%"
-

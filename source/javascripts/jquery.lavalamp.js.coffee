@@ -13,10 +13,14 @@ $.fn.lavaLamp = (o) ->
   
   @each ->
     
+    resize = () ->
+      move()
     move = ($el, cbType) ->
       $el or= $active
+      $widthSetter = $el.find(o.widthSetter)
       dims =
-        left: $el.find(o.widthSetter).position().left
+        top: $widthSetter.position().top + $widthSetter.height()
+        left: $widthSetter.position().left
         width: $el.find(o.widthSetter).width()
       $indicator.stop().animate dims, o.speed, o.fx
       
@@ -34,4 +38,7 @@ $.fn.lavaLamp = (o) ->
     $(@).bind "mouseleave", ->
       move()
       
-    move($active)
+    $(window).bind( "resize", resize).trigger 'resize'
+
+
+

@@ -2,3 +2,4 @@
 //= require jquery.easing.min.js
 //= require jquery.lavalamp.js
 //= require jquery.cycle.all.js
+// require debug.js

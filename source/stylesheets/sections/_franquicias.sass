@@ -1,0 +1,77 @@
+
+section.franquicias
+  .franquicias-box
+    overflow: hidden
+    border-width: 25px 30px 25px 40px
+    border-image: image_url("franquicias-bg.png") 25 30 25 40 fill stretch
+    +at-breakpoint($tablet)
+      border-width: 34px 40px 30px 60px
+      border-image: image_url("franquicias-bg.png") 34 40 30 60 fill stretch
+    +at-breakpoint($computer)
+      border-width: 34px 60px 30px 80px
+      border-image: image_url("franquicias-bg.png") 34 60 30 80 fill stretch
+  .heading
+    margin-bottom: 20px
+    +at-breakpoint($tablet)
+      margin-bottom: 0px
+      +span-columns(4,8)
+    +at-breakpoint($computer)
+      +span-columns(8,12)
+  .form
+    +at-breakpoint($tablet)
+      margin-top: 10px
+      +span-columns(4 omega,8)
+    +at-breakpoint($computer)
+      margin-top: 20px
+      +span-columns(4 omega,12)      
+  .row
+    margin-bottom: 12px
+    overflow: hidden
+  label
+    font-size: 10px
+    line-height: 19px
+    color: $orange
+    float: right
+    width: 50px
+    display: block
+    text-align: right
+    margin-right: 7px
+    +at-breakpoint($tablet)
+      font-size: 12px
+    +at-breakpoint($computer)
+      width: 60px
+      font-size: 13px
+    
+  input
+    background: transparent image_url("franquicias-input-bg.png") no-repeat center center
+    border: 0
+    width: image_width("franquicias-input-bg.png") - 20px
+    height: image_height("franquicias-input-bg.png") - 6px
+    float: right
+    outline: 0
+    padding: 3px 10px
+  h3
+    font-weight: 600
+    font-size: 16px
+    color: $orange
+    margin-bottom: 12px
+    +at-breakpoint($tablet)
+      font-size: 18px    
+    +at-breakpoint($computer)
+      font-size: 28px    
+  p
+    font-size: 11px
+    line-height: 20px
+    color: $light_grey
+    +at-breakpoint($tablet)
+      font-size: 12px
+      line-height: 22px
+    +at-breakpoint($computer)
+      font-size: 20px
+      line-height: 28px
+  button
+    +replace-text-with-dimensions("franquicias-submit-bg.png")
+    border: none
+    float: right
+    &:hover
+      +opacity(0.6)
