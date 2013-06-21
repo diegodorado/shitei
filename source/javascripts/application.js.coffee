@@ -30,6 +30,12 @@ $ ->
 
   $(window).bind( "resize", home_slides).trigger 'resize'
 
+
+  $('.franquicias-box, .contact-box').addClass 'pie'
+
+  if (window.PIE)
+    $('.pie').each () -> PIE.attach(@)
+
 home_slides =  ->
   
   $el = $("#home-slides")
