@@ -30,11 +30,11 @@ $ ->
 
   $(window).bind( "resize", home_slides).trigger 'resize'
 
-
-  $('.franquicias-box, .contact-box').addClass 'pie'
-
   if (window.PIE)
-    $('.pie').each () -> PIE.attach(@)
+    $('.franquicias-box, .contact-box').each () -> PIE.attach(@)
+    #force ie to redraw due to pie bug
+    setTimeout (-> $('.franquicias-box, .contact-box').css  {position : 'relative'} ), 100
+    
 
 home_slides =  ->
   
