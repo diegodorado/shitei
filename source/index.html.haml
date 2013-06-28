@@ -1,48 +1,25 @@
-
-%section.home
+%section.index
   .container
-    #home-slides
-      .slides-img
-        =image_tag "home1.png"
-      .slides-img
-        =image_tag "home1.png"
-      .slides-img
-        =image_tag "home1.png"
-      .slides-img
-        =image_tag "home1.png"
+    .logo
+      %a(href="#") 
+        %span SHITEI by sushihome
+        = image_tag("index/logo.png")
     
-    #home-slides-nav.slides
-      .slide-item
-        .indicator
-        %h4 
-          Bienvenido
-          %br
-          New York Roll!
-        %p
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-          Lorem ipsum dolor sit amet.
-      .slide-item
-        %h4 
-          Bienvenido
-          %br
-          New York Roll!
-        %p
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-          Lorem ipsum dolor sit amet.
-      .slide-item
-        %h4 
-          Bienvenido
-          %br
-          New York Roll!
-        %p
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-          Lorem ipsum dolor sit amet.
-      .slide-item
-        %h4 
-          Bienvenido
-          %br
-          New York Roll!
-        %p
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-          Lorem ipsum dolor sit amet.
-
+    .choose
+      = image_tag("index/elegi-sucursal.png")
+      = image_tag("index/elegi-sucursal-mobile.png", :class=>"mobile")
+    
+    %ul.places
+      %li.moreno
+        %a(href="#") 
+          = image_tag("index/moreno.png")
+          = image_tag("index/moreno-mobile.png", :class=>"mobile")
+      %li.pellegrini
+        %a(href="#") 
+          = image_tag("index/pellegrini.png")
+          = image_tag("index/pellegrini-mobile.png", :class=>"mobile")
+      %li.funes
+        %a(href="#") 
+          = image_tag("index/funes.png")
+          = image_tag("index/funes-mobile.png", :class=>"mobile")
+          

@@ -21,6 +21,7 @@
 # page "/path/to/file.html", :layout => false
 #
 # With alternative layout
+page "/", :layout => "index"
 # page "/path/to/file.html", :layout => :otherlayout
 #
 # A path which all have the same layout

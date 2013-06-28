@@ -1,0 +1,69 @@
+section.index
+  overflow: hidden
+  text-align: center
+  border-top: 3px solid $orange
+  margin-bottom: 160px
+  +at-breakpoint($tablet)
+    margin-bottom: 220px
+  +at-breakpoint($computer)
+    margin-bottom: 300px
+    
+  a
+    display: block
+    width: 100%
+      
+  .logo
+    margin: 10px 17% 0
+    +at-breakpoint($tablet)
+      margin: 39px 34% 0
+    +at-breakpoint($computer)
+      margin: 68px 34% 0
+    a
+      +hide_text
+      &:hover
+        +opacity(0.6)  
+    img
+      display: block      
+
+  .choose
+    margin: 27px 4% 0
+    +at-breakpoint($tablet)
+      margin: 58px 10% 0
+    +at-breakpoint($computer)
+      margin: 88px 10% 0
+    img
+      display: none
+      +at-breakpoint($tablet)
+        display: inline
+      &.mobile
+        display: inline
+        +at-breakpoint($tablet)
+          display: none
+      
+      
+  .places
+    overflow: hidden
+    margin-top: 14px
+    +at-breakpoint($tablet)
+      margin-top: 59px
+    +at-breakpoint($computer)    
+      margin-top: 88px
+    li
+      margin-top: 20px
+      +at-breakpoint($tablet)
+        margin-top: 0
+        +span-columns(2,6)
+        +nth-omega(3n)
+    &:hover
+      a
+        +opacity(0.6)
+        &:hover
+          +opaque
+    img
+      display: none
+      +at-breakpoint($tablet)
+        display: inline
+      &.mobile
+        display: inline
+        +at-breakpoint($tablet)
+          display: none
